@@ -1,21 +1,44 @@
-<<<<<<< HEAD
-# biometric_app
 
-A new Flutter project.
+1. Project Features (Assignment Part 2a)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Hi, I’m going to walk you through my Flutter project called Biometric Login.
 
-A few resources to get you started if this is your first Flutter project:
+This app allows users to log in using fingerprint authentication. If that fails or if biometric is not available on the device, it automatically falls back to a PIN-based login.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+It also stores authentication tokens securely using platform-specific secure storage. On Android, that’s the Keystore, and on iOS, it’s the Keychain.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Flutter_Biometric_app
-Biometric app using Fingerprint &amp; PIN as fall back
->>>>>>> 419282b6326309e2cd028dc795a0dabe1b013cc4
+The app handles important edge cases like when the device doesn’t support biometrics, or when the user disables biometric settings, or even when they add or remove fingerprints. 
+In all these situations, the app gracefully shows appropriate messages and directs users to the right login method.
+
+So overall, the app focuses on providing a secure login experience while keeping it smooth and user-friendly.
+
+
+
+
+2. Technologies Used (Assignment Part 2b)
+
+This project uses a few core Flutter packages to make everything work.
+
+First, it uses the `local_auth` package to handle biometric authentication like fingerprints and face recognition.
+
+Then, for storing sensitive login tokens, it uses `flutter_secure_storage`, which makes sure data is stored securely on the device.
+
+To improve security further, it also uses `device_info_plus` to detect if the app is running on an emulator, which helps prevent spoofing or unauthorized access.
+
+For the interface, I used basic Flutter widgets like snackbar for quick messages.
+
+
+
+3. Tech Stack (Assignment Part 2c)
+
+The frontend of this app is built entirely with Flutter using the Dart language.
+
+For authentication, it uses biometrics through the local auth package and falls back to a PIN if biometrics are not available.
+
+All sensitive data is saved using flutter secure storage, which makes use of native secure storage on Android and iOS.
+
+The app supports both Android and iOS platforms.
+
+On the security side, it includes spoofing detection using device info, limits PIN attempts, and checks for biometric changes to force reauthentication if needed.
+
