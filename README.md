@@ -1,3 +1,7 @@
+<img width="324" height="587" alt="image" src="https://github.com/user-attachments/assets/4a2f176a-6b77-4754-a8c1-bd31c9273211" />
+
+
+<img width="333" height="482" alt="image" src="https://github.com/user-attachments/assets/81d2861c-a9c1-4c11-968e-d290ce34da3f" />
 
 1. Project Features (Assignment Part 2a)
 
