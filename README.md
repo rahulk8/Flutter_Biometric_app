@@ -1,5 +1,7 @@
 Please watch  this video for entire working of this Biometric app : https://drive.google.com/file/d/1lo7mtnLNoTPMWX8UPPSNMb_PA9lzysQy/view?usp=sharing
 
+Here is Link to Download Flutter Biometric app APK : https://drive.google.com/file/d/1beflMk7iniu-Xfk5L3iwY3RyvJYu5WwK/view?usp=sharing
+
 Fingerprint screen is blacked out due to android security system in the above video.
 
 <img width="324" height="587" alt="image" src="https://github.com/user-attachments/assets/4a2f176a-6b77-4754-a8c1-bd31c9273211" />
